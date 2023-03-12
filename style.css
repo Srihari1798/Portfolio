@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-around !important;
+   
+}
+.navbar-brand img{
+    border-radius: 50px;
+}
+.name{
+    padding-left: 30px;
+ padding-top: 18px;
+ color: white;
+ animation: change-colors 10s linear infinite;
+}
+@keyframes change-colors {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: purple; }
+}
+
+.details{
+    padding-right: 50px;
+    display:flex ;
+    gap: 20px;
+   display: flex;
+   justify-content: flex-end;
+}
+.details a{
+    text-decoration:none !important;
+    color: white;
+}
+.details a:hover{
+    color: cyan;
+    transform: scale(1.1);
+}
+.main-container{
+    display: flex;
+   padding: 80px;
+   height: 600px;
+   /* background-color: blueviolet; */  
+   margin-top: 80px;
+   /* background-image: url(https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80);
+     */
+      background-image: url(https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60);
+   /* background-image: url(https://images.unsplash.com/photo-1512950050685-b1d4ae63d2df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60); */
+      background-size: cover;
+}
+.big-text{
+   color: blue; 
+}
+
+   .big-text {
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out; /* optional */
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+.text-container {
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .text {
+    display: inline-block;
+    width: 550px;
+    animation: typing 2s steps(10, end) 0s infinite alternate;
+    font-size: 28px;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    0% { color: red; } 
+    40% { color: yellow; }
+    60% { color: green; }
+    100% { color: purple; }
+  }
+  .para{
+    margin-top: 50px;
+    color: black;
+    
+  }
+  .linkedin-button {
+    background-color: #0077b5; /* LinkedIn blue */
+    color: #fff; /* white text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    border-radius: 5px;
+    margin-top: 25px;
+  }
+  
+  .linkedin-button:hover {
+    background-color: #005f8e; /* darker blue on hover */
+  }
+  .image-container img{
+   height: 500px;
+   border-radius: 50%;
+   /* margin-right: 10px; */
+   /* padding-left: 20px; */
+  }
+
+  img:hover {
+    transform: scale(1.1); /* scale up the image on hover */
+  }
+  .skill-container{
+    box-sizing: border-box;
+/* margin-top: 10px; */
+    height: 600px;
+    box-shadow: grey;
+    background-color: cadetblue;
+    /* position: absolute;
+    left: 10%; */
+  }
+  .photo-containers img{
+    height: 150px;
+    padding: 20px;
+  }
+.photo-containers{
+  box-sizing: border-box;
+  background-color: bisque;
+  padding: 0px 20px 20px 20px;
+  width: 100%;
+}
+.projects-container{
+  width: 100vw;
+  height: 600px;
+  /* position: absolute; */
+
+}
+.project{
+  margin-top: 210px;
+  padding: 20px;
+}
+.text-paper,.text-country{
+  text-align: center;
+  margin-top: 10%;
+}
+.paper-img img{
+  height: 300px;
+  border-radius: 10px;
+}
+.country-img img{
+  height: 300px;
+  border-radius: 10px;
+}
+.the-hindu,.country{
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+  #btn{
+    width: 100px;
+    border-radius: 25px;
+    background-color: #005f8e;
+    color: beige;
+  }
+  .cards{
+    margin-top: 220px;
+    padding: 30px;
+text-align: center;
+  }
+  
+  .card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .footer{
+    margin-top: 10px;
+    padding: 30px;
+  }
+ 
+
+  /* For screens smaller than 768px (typical mobile devices) */
+@media only screen and (max-width: 768px) {
+  
+  .main-container {
+    flex-direction: column; /* change to a single column layout */
+    height: auto; /* remove fixed height */
+    padding: 40px; /* reduce padding */
+  }
+  
+  .text-container {
+    margin-top: 20px; /* add some spacing between image and text */
+  }
+  
+  .text {
+    width: 100%; /* make the text container full width */
+    font-size: 24px; /* reduce font size for better readability */
+  }
+  
+  .linkedin-button {
+    position: static; /* remove absolute positioning */
+    margin-top: 20px; /* add some spacing below text */
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects-container {
+    height: auto;
+  }
+  .project {
+    margin-top: 20px;
+  }
+  .text-paper,
+  .text-country {
+    margin-top: 5%;
+  }
+  .paper-img img,
+  .country-img img {
+    height: 200px;
+  }
+  .the-hindu,
+  .country {
+    flex-direction: column;
+  }
+  #btn {
+    width: 80px;
+    font-size: 12px;
+  }
+  .cards {
+    margin-top: 80px;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
